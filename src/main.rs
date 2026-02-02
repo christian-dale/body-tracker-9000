@@ -1,3 +1,14 @@
+use dioxus::prelude::*;
+
 fn main() {
-    println!("Body Tracker 9000!");
+    dioxus::launch(App);
+}
+
+#[component]
+fn App() -> Element {
+    rsx! {
+        h1 {
+            "Body Tracker 9000"
+        }
+    }
 }
