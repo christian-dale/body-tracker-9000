@@ -1,6 +1,15 @@
 ## Body Tracker 9000
 
 Body Tracker 9000 is a tool designed to help you track and monitor your health metrics.
+It's intended to work as a self-hosted application running on your local network.
+
+## Building and running
+### Requirements
+- Rust Toolchain
+- Dioxus CLI
+
+### Running the application
+To run the codebase quickly you may run `dx serve --fullstack`.
 
 ## License
 
