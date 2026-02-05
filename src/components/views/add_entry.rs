@@ -10,22 +10,28 @@ pub fn AddEntry() -> Element {
                 class: "flex gap-8 w-full my-8",
 
                 div {
-                    class: "flex-1",
+                    class: "flex-1 flex flex-col gap-4",
+
+                    h2 { class: "text-xl font-bold", "Body Measurements"},
+
+                    input { r#type: "number", class: "border p-2 rounded w-full", placeholder: "Weight" },
+                    input { r#type: "number", class: "border p-2 rounded w-full", placeholder: "Waist (cm)" },
+                    input { r#type: "number", class: "border p-2 rounded w-full", placeholder: "Chest (cm)" },
+                    input { r#type: "number", class: "border p-2 rounded w-full", placeholder: "Arms (cm)" },
+                    input { r#type: "number", class: "border p-2 rounded w-full", placeholder: "Forearms (cm)" },
+                    input { r#type: "number", class: "border p-2 rounded w-full", placeholder: "Thighs (cm)" }
+                }
+
+                div {
+                     class: "flex-1 flex flex-col gap-4",
+
+                    h2 { class: "text-xl font-bold", "Other"},
+
                     input {
                         class: "border p-2 rounded w-full",
                         placeholder: "Enter title..."
                     },
                 },
-
-                div {
-                    class: "flex-1 flex flex-col gap-4",
-                    input { class: "border p-2 rounded w-full", placeholder: "Weight" },
-                    input { class: "border p-2 rounded w-full", placeholder: "Waist (cm)" },
-                    input { class: "border p-2 rounded w-full", placeholder: "Chest (cm)" },
-                    input { class: "border p-2 rounded w-full", placeholder: "Arms (cm)" },
-                    input { class: "border p-2 rounded w-full", placeholder: "Forearms (cm)" },
-                    input { class: "border p-2 rounded w-full", placeholder: "Thighs (cm)" }
-                }
             },
 
             div {
