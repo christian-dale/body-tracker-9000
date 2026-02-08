@@ -7,8 +7,9 @@ license = "AGPL-3.0-or-later"
 [dependencies]
 dioxus = { version = "0.7.1", features = ["fullstack", "router"] }
 sqlx = { version = "0.8", features = [ "runtime-tokio", "sqlite" ], optional = true }
+tokio = { version = "1.49.0", features = ["rt-multi-thread"], optional = true }
 
 [features]
 default = []
 web = ["dioxus/web"]
-server = ["dioxus/server", "dep:sqlx"]
+server = ["dioxus/server", "dep:sqlx", "dep:tokio"]
